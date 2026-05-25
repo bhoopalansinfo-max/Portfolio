@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bhoopalan Sampathkumar — IT Student & Aspiring Developer" />
+  <title>Bhoopalan | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font-display: 'Times New Roman', Times,serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'DM Mono', monospace;
+      --space-md: 1rem; --space-lg: 2rem; --space-xl: 4rem;
+      --radius-md: 10px; --radius-pill: 100px;
+      --accent: #00e5a0; --accent-glow: rgba(0,229,160,0.18);
+    }
+    [data-theme="dark"] {
+      --bg-primary:#080c10; --bg-secondary:#0e1318; --bg-card:#111820;
+      --text-primary:#eef2f7; --text-secondary:#8a9ab0; --text-muted:#4a5a6e;
+      --border:rgba(255,255,255,0.07); --border-accent:rgba(0,229,160,0.35);
+    }
+    body {font-family:var(--font-body);background:var(--bg-primary);color:var(--text-primary);margin:0;}
+    h1,h2 {font-family:var(--font-display);}
+    a {text-decoration:none;color:inherit;}
+
+    /* Navbar */
+    .navbar {position:fixed;top:0;left:0;right:0;background:var(--bg-secondary);padding:var(--space-md);display:flex;justify-content:space-between;align-items:center;}
+    .nav-links {list-style:none;display:flex;gap:var(--space-md);}
+    .nav-links a {font-family:var(--font-mono);color:var(--text-secondary);}
+    .nav-links a:hover {color:var(--accent);}
+
+    /* Sections */
+    section {padding:var(--space-xl) var(--space-lg);}
+    .section-title {font-size:2rem;margin-bottom:var(--space-md);}
+
+    /* Hero */
+    #home {min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding-top:80px;}
+    .hero-content {max-width:600px;}
+    .hero-name {font-size:3rem;font-weight:800;}
+    .hero-name em {color:var(--accent);}
+    .hero-tagline {color:var(--text-secondary);margin:var(--space-md) 0;}
+    .btn-primary {background:var(--accent);color:#080c10;padding:0.8rem 1.5rem;border-radius:var(--radius-pill);font-weight:700;}
+    .btn-ghost {border:1px solid var(--border);color:var(--text-secondary);padding:0.8rem 1.5rem;border-radius:var(--radius-pill);}
+
+    /* Skills */
+    .skills-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--space-md);}
+    .skill-card {background:var(--bg-card);padding:var(--space-md);border-radius:var(--radius-md);}
+
+    /* Projects */
+    .projects-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-md);}
+    .project-card {background:var(--bg-card);padding:var(--space-md);border-radius:var(--radius-md);}
+
+    /* Contact */
+    #contact {background:var(--bg-secondary);}
+    .contact-form {max-width:500px;margin:auto;display:flex;flex-direction:column;gap:var(--space-md);}
+    .contact-form input,.contact-form textarea {padding:0.8rem;border-radius:var(--radius-md);border:1px solid var(--border);background:var(--bg-card);color:var(--text-primary);}
+    .contact-form button {background:var(--accent);color:#080c10;padding:0.8rem;border:none;border-radius:var(--radius-pill);font-weight:700;}
+    .contact-links {margin-top:var(--space-lg);text-align:center;}
+    .contact-links a {display:inline-block;margin:0 var(--space-md);color:var(--accent);font-family:var(--font-mono);}
+    .contact-links a:hover {text-decoration:underline;}
+
+    /* Footer */
+    footer {background:var(--bg-card);text-align:center;padding:var(--space-md);color:var(--text-secondary);font-size:0.9rem;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Bhoopalan <span style="color:var(--accent)">| Dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home">
+    <div class="hero-content">
+      <h1 class="hero-name"><em>Bhoopalan</em> Sampathkumar</h1>
+      <p class="hero-tagline">IT Student passionate about building modern web applications.</p>
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#about" class="btn-ghost">Learn More</a>
+    </div>
+    <div class="hero-visual">
+      <img src="BHOOPALAN.jpeg" alt="Bhoopalan" style="width:250px;border-radius:20px;" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I’m Bhoopalan, an IT student exploring web development and design. I enjoy creating interactive, user-friendly applications and continuously learning new tools and frameworks.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">💻 HTML & CSS</div>
+      <div class="skill-card">⚙️ JavaScript</div>
+      <div class="skill-card">🗄️ Python</div>
+      <div class="skill-card">☁️ Cloud Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A simple web app to manage tasks with local storage persistence.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio showcasing skills, projects, and contact information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:bhoopalansinfo@gmail.com">📧 Email</a>
+      <a href="https://github.com/bhoopalansinfo-max" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/bhoopalan-sampathkumar" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Bhoopalan Sampathkumar. All Rights Reserved.
+  </footer>
+</body>
+</html>
